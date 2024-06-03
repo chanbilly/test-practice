@@ -15,7 +15,7 @@ export type Tile = Position & {
 
 export type Board = Tile[][]
 
-export const TILE_STATUSES = ["hidden", "mine", "number", "marked"] as const
+const TILE_STATUSES = ["hidden", "mine", "number", "marked"] as const
 
 export function createBoard(boardSize: number, minePositions: Position[]): Board {
   return times((x) => {
