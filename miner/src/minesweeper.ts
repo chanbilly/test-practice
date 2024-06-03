@@ -5,7 +5,7 @@ export type Position = {
   y: number,
 }
 
-export type TileStatus = typeof TILE_STATUSES[number]
+type TileStatus = typeof TILE_STATUSES[number]
 
 export type Tile = Position & {
   mine: boolean,
